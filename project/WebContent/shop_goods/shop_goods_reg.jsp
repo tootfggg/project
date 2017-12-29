@@ -22,33 +22,45 @@
 		<table>
 			<caption>상품 등록</caption>
 			<tr>
-				<td class="td_left"><label for="board_name">글쓴이</label></td>					
+				<td class="td_left"><label for="idx">번호</label></td>					
 				<td class="td_right">
-					<input type="text" name="board_name" size="10" maxlength='10' required="required">
+					<input type="text" name="idx" size="10" maxlength='10' required="required">
 				</td>
 			</tr>
 			<tr>
-				<td class="td_left"><label for="board_subject">제 목</label></td>					
+				<td class="td_left"><label for="categories">카테고리</label></td>					
 				<td class="td_right">
-					<input type="text" name="board_subject" size="50" maxlength='100' required="required">
+					<input type="text" name="categories" size="50" maxlength='100' required="required">
 				</td>
 			</tr>
 			<tr>
-				<td class="td_left"><label for="board_content">내 용</label></td>					
+				<td class="td_left"><label for="products_quantity">수 량</label></td>					
 				<td class="td_right">
-					<textarea name='board_content' cols='60' rows='15' required="required"></textarea>
+					<textarea name='products_quantity' cols='60' rows='15' required="required"></textarea>
 				</td>
 			</tr>			
 			<tr>
-				<td class="td_left"><label for="board_pass">비밀번호</label></td>					
+				<td class="td_left"><label for="products_model">모델</label></td>					
 				<td class="td_right">
-					<input type="password" name="board_pass" size="10" maxlength='10' required="required">
+					<input type="text" name="products_model" size="10" maxlength='10' required="required">
 				</td>
 			</tr>
 			<tr>
-				<td class="td_left"><label for="board_file">파일첨부</label></td>					
+				<td class="td_left"><label for="products_image">이미지</label></td>	
 				<td class="td_right">
-					<input type="file" name="board_file">
+					<input type="file" name="products_image">
+				</td>
+			</tr>
+			<tr>
+				<td class="td_left"><label for="products_price">가격</label></td>					
+				<td class="td_right">
+					<input type="text" name="products_price">
+				</td>
+			</tr>
+			<tr>
+				<td class="td_left"><label for="manufacturers_id">제조사</label></td>					
+				<td class="td_right">
+					<input type="text" name="manufacturers_id">
 				</td>
 			</tr>
 			<tr class="commandCell">

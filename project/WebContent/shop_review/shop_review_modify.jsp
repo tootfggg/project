@@ -15,20 +15,20 @@
 		<tr>
 			<td class="td_left">제 목</td>					
 			<td class="td_right">
-			<input type='text' name='board_subject' size="64" value='<%=vo.getBoard_subject()%>'>						
+			<input type='text' name='board_subject' size="64" value='#'>						
 			</td>
 		</tr>
 		<tr>
 			<td class="td_left">작성자</td>					
 			<td class="td_right">
-			<input type='text' name='board_name' size="64" value='<%=vo.getBoard_name()%>'
+			<input type='text' name='board_name' size="64" value='#'
 			readonly>						
 			</td>
 		</tr>
 		<tr>
 			<td class="td_left">내 용</td>					
 			<td class="td_right"><!--  -->
-				<textarea name='contents' cols='65' rows='15'><%=vo.getBoard_content()%></textarea>			
+				<textarea name='contents' cols='65' rows='15'><%-- <%=vo.getBoard_content()%> --%></textarea>			
 			</td>
 		</tr>
 		<tr>
@@ -40,7 +40,7 @@
 		<tr>
 			<td class="td_left"><label for="board_file">파일첨부</label></td>					
 			<td class="file_td">
-			<%
+			<%-- <%
 			String fileName=vo.getBoard_file();
 			
 			if(fileName!=null){				
@@ -48,7 +48,7 @@
 				<%=fileName%>
 			<%}else{%><!-- 처음 입력시 파일을 안 넣었다면 수정하는 부분에서만 넣는 것 허용 -->
 				<input type="file" name="board_file">
-			<%} %>
+			<%} %> --%>
 			</td>	
 		</tr>
 		<tr class="button_cell">
@@ -58,8 +58,8 @@
 			</td>
 		</tr>
 	</table>
-	<input type="hidden" name="board_num" value="<%=vo.getBoard_num() %>">	
-	<input type="hidden" name="page" value="<%=current_page %>">	
+	<input type="hidden" name="board_num" value="#">	
+	<input type="hidden" name="page" value="<#">	
 	</form>	
 </body>
 </html>

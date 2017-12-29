@@ -9,39 +9,82 @@
 <table>
 	<caption>회원 정보 보기</caption>
 		<tr>
-			<td class="td_left">제 목</td>					
+			<td class="td_left">회원 번호</td>					
 			<td class="td_right">
-			<input type='text' name='board_subject' size="64" readonly value="<%=vo.getBoard_subject() %>">								
+			<input type='text' name='idx' size="64" readonly value="#">								
 			</td>
 		</tr>
 		<tr>
-			<td class="td_left">작성자</td>					
+			<td class="td_left">회원 이름</td>					
 			<td class="td_right">
-			<input type='text' name='board_name' size="64" value="<%=vo.getBoard_name()%>"
+			<input type='text' name='username' size="64" value="#"
 			readonly>						
 			</td>
 		</tr>
 		<tr>
-			<td class="td_left">내 용</td>					
+			<td class="td_left">성 별</td>					
 			<td class="td_right">
-				<textarea name='contents' cols='65' rows='15' readonly><%=vo.getBoard_content() %>
+				<textarea name='gender' cols='65' rows='15' readonly>
 				</textarea>
 			</td>
 		</tr>
 		<tr>
-			<td class="td_left">파일첨부</td>					
-			<td class="file_td">
-			<%
-			String fileName=vo.getBoard_file();
-			
-			if(fileName!=null){
-				fileName=new String(fileName.getBytes(),"UTF-8");
-			%>
-				<a href = "board/file_down.jsp?file_name=<%=fileName %>">
-				<%=fileName%></a>
-			<%}%><!-- 처음 입력시 파일을 안 넣었다면 수정하는 부분에서만 넣는 것 허용 -->
-			</td>			
+			<td class="td_left">국 가</td>					
+			<td class="td_right">
+				<textarea name='country_idx' cols='65' rows='15' readonly>
+				</textarea>
+			</td>
 		</tr>
+		<tr>
+			<td class="td_left">우편 번호</td>					
+			<td class="td_right">
+				<textarea name='postcode' cols='65' rows='15' readonly>
+				</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td class="td_left">주 소</td>					
+			<td class="td_right">
+				<textarea name='address1' cols='65' rows='15' readonly>
+				</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td class="td_left">전화 번호</td>					
+			<td class="td_right">
+				<textarea name='phone1' cols='65' rows='15' readonly>
+				</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td class="td_left">e_mail</td>					
+			<td class="td_right">
+				<textarea name='email1' cols='65' rows='15' readonly>
+				</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td class="td_left">회원 등급</td>					
+			<td class="td_right">
+				<textarea name='grade' cols='65' rows='15' readonly>
+				</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td class="td_left">last_login</td>					
+			<td class="td_right">
+				<textarea name='last_login' cols='65' rows='15' readonly>
+				</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td class="td_left">login_cnt</td>					
+			<td class="td_right">
+				<textarea name='login_cnt' cols='65' rows='15' readonly>
+				</textarea>
+			</td>
+		</tr>
+		
 		<tr class="button_cell">
 			<td colspan='2'>
 			<input type='button' value="답변" onClick="reply_list()">

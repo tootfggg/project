@@ -1,4 +1,4 @@
-//<%@page import="board.vo.BoardVO"%>
+<%-- <%@page import="board.vo.BoardVO"%> --%>
 <%@ page language="java" contentType="text/html; " pageEncoding="UTF-8"%>
 <%
   /*  BoardVO vo = (BoardVO)request.getAttribute("vo");

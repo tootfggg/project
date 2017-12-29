@@ -11,10 +11,11 @@
 	<caption>상품 목록</caption>
 	<tr class="tr_title">
 		<th>번호</th>
-		<th>제목</th>
-		<th>작성자</th>
-		<th>날짜</th>
-		<th>조회수</th>
+		<th>카테고리</th>
+		<th>수량</th>
+		<th>이미지</th>
+		<th>가격</th>
+		<th>출판사</th>
 	</tr>	
 <%
 	//검색에서 넘어온 경우

@@ -11,27 +11,27 @@
 		<tr>
 			<td class="td_left">제 목</td>					
 			<td class="td_right">
-			<input type='text' name='board_subject' size="64" readonly value="<%=vo.getBoard_subject() %>">								
+			<input type='text' name='board_subject' size="64" readonly value="#%>">								
 			</td>
 		</tr>
 		<tr>
 			<td class="td_left">작성자</td>					
 			<td class="td_right">
-			<input type='text' name='board_name' size="64" value="<%=vo.getBoard_name()%>"
+			<input type='text' name='board_name' size="64" value="#"
 			readonly>						
 			</td>
 		</tr>
 		<tr>
 			<td class="td_left">내 용</td>					
 			<td class="td_right">
-				<textarea name='contents' cols='65' rows='15' readonly><%=vo.getBoard_content() %>
+				<textarea name='contents' cols='65' rows='15' readonly>
 				</textarea>
 			</td>
 		</tr>
 		<tr>
 			<td class="td_left">파일첨부</td>					
 			<td class="file_td">
-			<%
+			<%-- <%
 			String fileName=vo.getBoard_file();
 			
 			if(fileName!=null){
@@ -39,7 +39,7 @@
 			%>
 				<a href = "board/file_down.jsp?file_name=<%=fileName %>">
 				<%=fileName%></a>
-			<%}%><!-- 처음 입력시 파일을 안 넣었다면 수정하는 부분에서만 넣는 것 허용 -->
+			<%}%> --%><!-- 처음 입력시 파일을 안 넣었다면 수정하는 부분에서만 넣는 것 허용 -->
 			</td>			
 		</tr>
 		<tr class="button_cell">

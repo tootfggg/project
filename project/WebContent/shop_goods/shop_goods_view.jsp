@@ -7,24 +7,45 @@
 <title>Insert title here</title>
 </head>
 <table>
-	<caption>내용보기</caption>
+	<caption>상품 보기</caption>
 		<tr>
-			<td class="td_left">제 목</td>					
+			<td class="td_left">번 호</td>					
 			<td class="td_right">
-			<input type='text' name='board_subject' size="64" readonly value="#%>">								
+			<input type='text' name='idx' size="64" readonly value="#">								
 			</td>
 		</tr>
 		<tr>
-			<td class="td_left">작성자</td>					
+			<td class="td_left">categories</td>					
 			<td class="td_right">
-			<input type='text' name='board_name' size="64" value="#"
+			<input type='text' name='categories' size="64" value="#"
 			readonly>						
 			</td>
 		</tr>
 		<tr>
-			<td class="td_left">내 용</td>					
+			<td class="td_left">products_model</td>					
 			<td class="td_right">
-				<textarea name='contents' cols='65' rows='15' readonly>
+				<textarea name='products_model' cols='65' rows='15' readonly>
+				</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td class="td_left">products_image</td>					
+			<td class="td_right">
+				<textarea name='products_image' cols='65' rows='15' readonly>
+				</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td class="td_left">products_price</td>					
+			<td class="td_right">
+				<textarea name='products_price' cols='65' rows='15' readonly>
+				</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td class="td_left">manufacturers_id</td>					
+			<td class="td_right">
+				<textarea name='manufacturers_id' cols='65' rows='15' readonly>
 				</textarea>
 			</td>
 		</tr>

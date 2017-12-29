@@ -11,30 +11,48 @@
 	<form action="qUpdate.do" method="post" 
 	enctype="multipart/form-data">
 	<table>
-	<caption>수정하기</caption>
+	<caption>상품 수정</caption>
 		<tr>
-			<td class="td_left">제 목</td>					
+			<td class="td_left">idx</td>					
 			<td class="td_right">
-			<input type='text' name='board_subject' size="64" value='#'>						
+			<input type='text' name='idx' size="64" value='#'>						
 			</td>
 		</tr>
 		<tr>
-			<td class="td_left">작성자</td>					
+			<td class="td_left">categories</td>					
 			<td class="td_right">
-			<input type='text' name='board_name' size="64" value='#'
+			<input type='text' name='categories' size="64" value='#'
 			readonly>						
 			</td>
 		</tr>
 		<tr>
-			<td class="td_left">내 용</td>					
+			<td class="td_left">products_quantity</td>					
 			<td class="td_right"><!--  -->
-				<textarea name='contents' cols='65' rows='15'><%-- <%=vo.getBoard_content()%> --%></textarea>			
+				<textarea name='products_quantity' cols='65' rows='15'><%-- <%=vo.getBoard_content()%> --%></textarea>			
 			</td>
 		</tr>
 		<tr>
-			<td class="td_left">비밀번호</td>					
+			<td class="td_left">products_model</td>					
 			<td class="td_right">
-				<input type="password" name='board_pass'>
+				<input type="text" name='products_model'>
+			</td>
+		</tr>
+		<tr>
+			<td class="td_left">products_image</td>					
+			<td class="td_right">
+				<input type="text" name='products_image'>
+			</td>
+		</tr>
+		<tr>
+			<td class="td_left">products_price</td>					
+			<td class="td_right">
+				<input type="text" name='products_price'>
+			</td>
+		</tr>
+		<tr>
+			<td class="td_left">manufacturers_id</td>					
+			<td class="td_right">
+				<input type="text" name='manufacturers_id'>
 			</td>
 		</tr>
 		<tr>

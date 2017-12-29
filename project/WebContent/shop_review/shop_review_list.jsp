@@ -8,23 +8,26 @@
 </head>
 <body>
 <table class="top_table">
-	<caption>회원 목록</caption>
+	<caption>리뷰 목록</caption>
 	<tr class="tr_title">
 		<th>번호</th>
-		<th>제목</th>
-		<th>작성자</th>
-		<th>날짜</th>
+		<th>상품 번호</th>
+		<th>회원 번호</th>
+		<th>평가</th>
+		<th>내용</th>
+		<th>등록 날짜</th>
+		<th>마지막 수정 날짜</th>
 		<th>조회수</th>
 	</tr>	
 <%
 	//검색에서 넘어온 경우
-	String criteria = (String)request.getAttribute("criteria");
+	/* String criteria = (String)request.getAttribute("criteria");
 	String searchword = (String)request.getAttribute("searchword");
 	
 	
 	
 	Vector<BoardVO> list=(Vector<BoardVO>)request.getAttribute("list");
-	//페이지 나누기를 위한 정보
+	페이지 나누기를 위한 정보
 	PageVO info = (PageVO)request.getAttribute("info");
 	int total_page = info.getTotalPage();
 	int current_page = info.getPage();
@@ -36,34 +39,34 @@
 	int id_num = totalRows-(current_page-1)*10;
 	
 	
-	for(BoardVO i:list){
+	for(BoardVO i:list){ */
 %>
 	<tr class="tr_top">
 		<%-- <td class="td_align"><%=i.getBoard_num() %></td>--%>
-		<td class = "td_align"><%=id_num %></td>				
+		<td class = "td_align"><%-- <%=id_num %> --%></td>				
 		<td>
 			<%
-				if(i.getBoard_re_lev() != 0){
+				/* if(i.getBoard_re_lev() != 0){
 					for(int j = 0; j <= i.getBoard_re_lev()*1;j++){
 						out.print("&nbsp;");
 					}
-				}
+				} */
 			%>
 			<%--제목에 현재 board_num이 몇 번인지 링크 걸기 --%>					
-			<a href="qHitUpdate.do?board_num=<%=i.getBoard_num()%>&page=<%=current_page%>">
+			<%-- <a href="qHitUpdate.do?board_num=<%=i.getBoard_num()%>&page=<%=current_page%>">
 			<%=i.getBoard_subject()%></a>			
 		</td>
 		<td class="td_align"><%=i.getBoard_name() %></td>
 		<td class="td_align"><%=i.getBoard_date() %></td>
 		<td class="td_align"><%=i.getBoard_readcount() %></td>
-	</tr>
-<%}
-	id_num--;
+	</tr> --%>
+<%/* }
+	id_num--; */
 	%>	
 	<tr>
 		<td colspan = "5">
 			<%
-			if(searchword == null){
+			/* if(searchword == null){
 				
 				//[이전] 나오게 하기
 				if(current_page <= 1){
@@ -114,7 +117,7 @@
 					out.print("<a href = qSearch.do?page="+(current_page+1)+"&criteria="+criteria+"&searchword="+searchword+">");
 					out.print("[다음]</a>");
 				}
-			}
+			} */
 			%>
 	</tr>
 </table>
@@ -129,10 +132,10 @@
 				</select>
 				<input type='text' name='searchword'>
 				<input type='button' value='검색' onclick="search()">		
-				<input type='hidden' name="page" value="<%=current_page %>">				
+				<input type='hidden' name="page" value="#">				
 			</form>
 		</td>
-		<td align='right'><a href="board/qna_board_write.jsp?page=<%=current_page%>">[글쓰기]</a></td>
+		<td align='right'><a href="#">[글쓰기]</a></td>
 	</tr>
 </table>
 </body>
